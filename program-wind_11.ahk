@@ -39,7 +39,7 @@ if (Confirm()) {
     "        }`n" .
     "    }`n" .
     "} `n" .
-    "$users = Get-LocalUser | Where-Object { $_.Name -notin @('Administrador', 'My Present', 'Developer', 'Convidado', 'DefaultAccount', 'gaia', 'suport', 'WDAGUtilityAccount') }`n" . 
+    "$users = Get-LocalUser | Where-Object { $_.Name -notin @('Administrador', 'Convidado', 'DefaultAccount', 'gaia', 'suport', 'WDAGUtilityAccount') }`n" . 
     "foreach ($user in $users) {`n" .
     "    Remove-LocalUser -Name $user.Name`n" .
     "} `n"
